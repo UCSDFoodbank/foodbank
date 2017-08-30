@@ -1,5 +1,25 @@
 <!DOCTYPE html>
 <html>
+  <style type="text/css">
+    .container {
+    height: 300px;
+    text-align: center;  /* align the inline(-block) elements horizontally */
+    font: 0/0 a;         /* remove the gap between inline(-block) elements */
+}
+
+.container:before {    /* create a full-height inline block pseudo=element */
+    content: ' ';
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    height: 100%;
+}
+
+#element {
+    display: inline-block;
+    vertical-align: middle;  /* vertical alignment of the inline element */
+    font: 16px/1 Arial sans-serif;        /* <-- reset the font property */
+}
+  </style>
   
   <head>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
@@ -9,8 +29,16 @@
 
   <body class="container-fluid">
     <div class="row justify-content-center">
-      <divclass="col-10">
-          <center><img src="assets/logo.png" style="width:600px;height:200px;"></center>
+      <div class="col-10">
+          
+          <div class="container"> 
+            <div id="element">
+              <a href="index.html">
+                <img class="mid" src="assets/logo.png" style="width:600px;height:200px;">
+              </a>
+            </div>
+          </div>
+          
           <h2><center>I am...</center><h2>
           
           <table align="center">
