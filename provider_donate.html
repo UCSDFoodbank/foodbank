@@ -132,13 +132,14 @@
     <link rel="stylesheet" type="text/css" href="assets/button_toggle.css">
   
   
-  <form style="PADDING-LEFT:100px">  
+  <form style="PADDING-LEFT:50px">  
         <p>
           <label>1. Describe the item(s):</label>
           <br>
           <textarea id = "myTextArea"
                   rows = "5"
-                  cols = "70">Type here</textarea>
+                  cols = "70"
+                  placeholder="Enter items"></textarea>
         </p>          
     
     
@@ -154,7 +155,7 @@
           <label>3. Suggested Serving Size: </label>
           <input type = "text"
                  id = "myText"
-                 value = "e.g. 1-2" />
+                 placeholder = "e.g. 1-2" />
         </p>
     
     
@@ -175,8 +176,8 @@
     
   
         <p>
-          <label>5. Make available to individuals? </label>
-           <br><label style="font-size:10px">(Note: Selecting "No" will make it available to charities only.) </label>
+	<label>5. Make available to individuals? </label>
+	<label style="font-size:15px">(Note: Selecting "No" will make it available to charities only.) </label>
           <br><input type="radio" name="answer1" value="yes" /> Yes
           <input type="radio" name="answer2" value="no" /> No
    		</p>
