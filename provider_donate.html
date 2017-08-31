@@ -61,41 +61,45 @@
                   placeholder="Enter items"></textarea>
         </p>
 
-
-        <p>
-          <label>2. Contains:</label>
-          <br> <input type="checkbox" name="nut" value="nuts" /> Nuts
-          <input type="checkbox" name="dairys" value="dairy" /> Dairy
-          <input type="checkbox" name="glutes" value="gluten" /> Gluten
-        </p>
-
-
-		<p>
-          <label>3. Suggested Serving Size: </label>
+	<p>
+          <label>2. Suggested Serving Size: </label>
           <input type = "text"
                  id = "myText"
                  placeholder = "e.g. 1-2" />
         </p>
 
+        <p>
+          <label>3. Contains:</label>
+          <br> <input type="checkbox" name="nut" value="nuts" /> Nuts
+          <input type="checkbox" name="dairys" value="dairy" /> Dairy
+          <input type="checkbox" name="glutes" value="gluten" /> Gluten
+        </p>
+	  
+        <p>
+          <label>4. Type of Food:</label>
+          <br> <input type="radio" name="perish" value="perishable" /> Perishable
+	  <br> <input type="radio" name="nonperish" value="non-perishable" /> Non-Perishable/Canned goods
+        </p>
+	  
 
         <p>
-          <label>4. Pick-up Availability:</label>
+          <label>5. Pick-up Availability:</label>
           <p>
             <label style="font-size:12px">Date </label>
-  				<input type="date" name="date" >
-  		  </p>
- 		  <p>
+  	    <input type="date" name="date" >
+  	  </p>
+ 	  <p>
             <label style="font-size:12px">Start</label>
-  		   		<input type="time" name="start_time">
-          	<label style="font-size:12px">End</label>
-           		<input type="time" name="end_time">
-  		  </p>
+  	    <input type="time" name="start_time">
+            <label style="font-size:12px">End</label>
+            <input type="time" name="end_time">
+  	  </p>
           <button type="button">Add Another Time</button>
         </p>
 
 
         <p>
-	<label>5. Make available to individuals? </label>
+	<label>6. Make available to individuals? </label>
 	<label style="font-size:15px">(Note: Selecting "No" will make it available to charities only.) </label>
           <br><input type="radio" name="answer1" value="yes" /> Yes
           <input type="radio" name="answer1" value="no" /> No
