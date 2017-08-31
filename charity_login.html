@@ -1,91 +1,9 @@
 <!DOCTYPE html>
-  <html>
-   <head>
+<html>
+<head>
    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
    <link rel="stylesheet" type="text/css" href="assets/styles.css">
-    <style>
-      a:link {
-        color: blue;
-          background-color: transparent;
-          text-decoration: none;
-      }
-      a:visited {
-        color: blue;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      a:hover {
-        color: red;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      a:active {
-        color: yellow;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      b:link {
-        color: blue;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      b:visited {
-        color: blue;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      b:hover {
-       color: red;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      b:active {
-        color: yellow;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      c:link {
-        color: blue;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      c:visited {
-        color: blue;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      c:hover {
-        color: red;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      c:active {
-        color: yellow;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      d:link {
-        color: blue;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      d:visited {
-        color: blue;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      d:hover {
-        color: red;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      d:active {
-        color: yellow;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-    </style>
- </head>
+   <title>Profile</title>
    <style>
    body {
      margin:0;
@@ -119,16 +37,17 @@
 </head>
 <body>
   <div class="topnav">
-    <a class="active" href="index.html"><img src="assets/logo.png" style="width:100;height:25px;"></a>
+    <a class="active" href="index.html"><img src="assets/logo.png" style="width:100;height:20px;"></a>
     <a href="charity_login.html">Profile</a>
     <a href="calendar.html">Calendar</a>
     <a href="index.html">Log Out</a>
   </div>
   <header>
     <p></p>
-    <h1 style="PADDING-LEFT:50px"> Welcome back, Food4Kids! </h1>
+    <h1 style="PADDING-LEFT:50px"><center>Hello, Food4Kids!</center></h1>
 
      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="assets/button_toggle.css">
 
       <h3 style="PADDING-LEFT:50px"> History </h3>
     </header>
@@ -140,6 +59,18 @@
 
     <a href="#" style="PADDING-LEFT:50px">View Detailed History</a>
     <a href="calendar.html" style="PADDING-LEFT:30px">Find Food Near Me!</a>
+    <br>
+    <br>
+    <h3 style="PADDING-LEFT:50px; text-align:left; float:left">Serving Status</h3>
+    <table>
+      <td>
+        <div class="wrapper" style="PADDING-LEFT:20px">
+          <input type="checkbox" name="toggle" id="toggle">
+          <label for="toggle"></label>
+        </div>
+      </td>
+    </table>
+    <h4 style="PADDING-LEFT:50px; text-align:left; float:left">Turn slider on/off to change visibility.</h4>
 
 
   </body>

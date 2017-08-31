@@ -1,30 +1,9 @@
 <!DOCTYPE html>
 <html>
-
-  <style type="text/css">
-    .container {
-    height: 300px;
-    text-align: center;  /* align the inline(-block) elements horizontally */
-    font: 0/0 a;         /* remove the gap between inline(-block) elements */
-}
-
-.container:before {    /* create a full-height inline block pseudo=element */
-    content: ' ';
-    display: inline-block;
-    vertical-align: middle;  /* vertical alignment of the inline element */
-    height: 100%;
-}
-
-#element {
-    display: inline-block;
-    vertical-align: middle;  /* vertical alignment of the inline element */
-    font: 16px/1 Arial sans-serif;        /* <-- reset the font property */
-}
-  </style>
-
-  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-  <link rel="stylesheet" type="text/css" href="assets/styles.css">
-  <title>FoodBank</title>
+<head>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="assets/styles.css">
+<title>FoodBank</title>
 <style>
 a {
   color: inherit;
@@ -128,9 +107,7 @@ body {
 <body>
 
 <div class="topnav">
-  <a class="active" href="index.html"><img src="assets/logo.png" style="width:100;height:25px;"></a>
-  <a href="#contact">Contact</a>
-  <a href="#about">About</a>
+  <a class="active" href="index.html"><img src="assets/logo.png" style="width:100;height:20px;"></a>
 </div>
 
 <div class="row justify-content-center">

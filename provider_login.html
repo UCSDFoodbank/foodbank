@@ -1,90 +1,9 @@
 <!DOCTYPE html>
-  <html>
-   <head>
-    <style>
-      a:link {
-        color: blue;
-          background-color: transparent;
-          text-decoration: none;
-      }
-      a:visited {
-        color: blue;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      a:hover {
-        color: red;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      a:active {
-        color: yellow;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      b:link {
-        color: blue;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      b:visited {
-        color: blue;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      b:hover {
-       color: red;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      b:active {
-        color: yellow;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      c:link {
-        color: blue;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      c:visited {
-        color: blue;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      c:hover {
-        color: red;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      c:active {
-        color: yellow;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      d:link {
-        color: blue;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      d:visited {
-        color: blue;
-        background-color: transparent;
-        text-decoration: none;
-      }
-      d:hover {
-        color: red;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-      d:active {
-        color: yellow;
-        background-color: transparent;
-        text-decoration: underline;
-      }
-    </style>
- </head>
-
+<html>
+<head>
+   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+   <link rel="stylesheet" type="text/css" href="assets/styles.css">
+   <title>Profile</title>
    <style>
    body {
      margin:0;
@@ -118,14 +37,14 @@
 </head>
 <body>
   <div class="topnav">
-    <a class="active" href="index.html">Home</a>
+    <a class="active" href="index.html"><img src="assets/logo.png" style="width:100;height:20px;"></a>
     <a href="provider_login.html">Profile</a>
     <a href="provider_donate.html">Donate</a>
     <a href="index.html">Log Out</a>
   </div>
   <header>
     <p></p>
-    <h1 style="PADDING-LEFT:50px"> Welcome back, VeggieGrill! </h1>
+    <h1 style="PADDING-LEFT:50px"><center>Welcome back, VeggieGrill!</center></h1>
 
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/button_toggle.css">
@@ -139,72 +58,20 @@
     </p>
 
     <a href="#" style="PADDING-LEFT:50px">View Detailed History</a>
-    <a href="#" style="PADDING-LEFT:30px">Schedule a Donation!</a>
+    <a href="provider_donate.html" style="PADDING-LEFT:30px">Schedule a Donation!</a>
 
     <br>
     <br>
-    <h3 style="PADDING-LEFT:50px; text-align:left; float:left"> Currently Donating </h3></body></html>
-    <p style="PADDING-LEFT:456px;"> Available </p>
-
-
-
+    <h3 style="PADDING-LEFT:50px; text-align:left; float:left">Donation Status</h3>
     <table>
-
-      <tr>
-        <td>
-          <p style="PADDING-LEFT:300px; font-size:20px">Bread</p>
-        </td>
-
-        <td>
-          <div class="wrapper" style="PADDING-LEFT:20px">
-            <input type="checkbox" name="toggle" id="toggle">
-            <label for="toggle"></label>
-          </div>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <p style="PADDING-LEFT:300px; font-size:20px">Mashed potato</p>
-        </td>
-
-        <td>
-          <div class="wrapper" style="PADDING-LEFT:20px">
-            <input type="checkbox" name="toggle1" id="toggle1">
-            <label for="toggle1"></label>
-          </div>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <p style="PADDING-LEFT:300px; font-size:20px">Soup</p>
-        </td>
-
-        <td>
-          <div class="wrapper" style="PADDING-LEFT:20px;">
-            <input type="checkbox" name="toggle2" id="toggle2">
-            <label for="toggle2"></label>
-          </div>
-        </td>
-      </tr>
-
-      <tr>
-        <td>
-          <p style="PADDING-LEFT:300px; font-size:20px">Salad</p>
-        </td>
-
-        <td>
-          <div class="wrapper" style="PADDING-LEFT:20px">
-            <input type="checkbox" name="toggle3" id="toggle3">
-            <label for="toggle3"></label>
-          </div>
-        </td>
-      </tr>
-
+      <td>
+        <div class="wrapper" style="PADDING-LEFT:20px">
+          <input type="checkbox" name="toggle" id="toggle">
+          <label for="toggle"></label>
+        </div>
+      </td>
     </table>
+    <h4 style="PADDING-LEFT:50px; text-align:left; float:left">Turn slider on/off to change visibility.</h4>
 
-
-  </body>
-
+</body>
 </html>
