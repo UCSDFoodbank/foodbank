@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <title>Foodbank Sign Up - Charity </title>
+</head>
+<body>
+
+    <form action="/action_page.php">
+
+        <div class="imgcontainer">
+           <center> 
+              <a href="index.html">
+                <img src="assets/logo.png" style="width:600px;height:200px;"  alt="logo" class="logo">
+              </a>
+            </center>
+        </div>
+
+        <div class="container">
+            <center><label><b>Username</b></label>
+            <input type="text" placeholder="Email" name="uname" required></center>
+        </div>
+
+        <div class="container">
+            <center>
+            <label><b>Password</b></label>
+                <input type="password" placeholder="Confirm Email" name="psw" required></center>
+                
+                <div class="container">
+            <center><label><b>Username</b></label>
+            <input type="text" placeholder="Password" name="uname" required></center>
+        </div>
+
+        <div class="container">
+            <center>
+            <label><b>Password</b></label>
+                <input type="password" placeholder="Confirm Password" name="psw" required></center>
+        </div>
+            <button type="submit">Login</button>
+            <input type="checkbox" checked="checked"> Remember me
+
+
+        <div class="container" style="background-color:#f1f1f1">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+    </form>
+</body>
+
+<!-- JS -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+</html>
