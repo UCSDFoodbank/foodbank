@@ -33,36 +33,88 @@
        background-color: #1BCC6C;
        color: white;
    }
+
+   H3 {display: inline;}
+
+  a {
+    color: inherit;
+  }
+
+  a:hover {
+    color: inherit;
+    text-decoration: inherit;
+  }
+
+  body {
+    margin:0;
+  }
+
+  .wrapper {
+    max-width: 300px;
+    margin: 94px auto 0 auto;
+  }
+
+  .button {
+    background-color: #1BCC6C;
+    width: 300px;
+    height: 30px;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    padding: 50px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+
+  .buttonservice {
+    background-color: white;
+    color: black;
+    border: 2px solid #48FFCF;
+  }
+
+  .buttonservice:hover {
+    background-color: #48FFCF;
+    color: white;
+  }
+
+
+
    </style>
 </head>
 <body>
   <div class="topnav">
     <a class="active" href="index.html"><img src="assets/logo.png" style="width:100;height:20px;"></a>
-    <a href="provider_login.html">Profile</a>
-    <a href="provider_donate.html">Donate</a>
+    <a href="charity_login.html">Profile</a>
+    <a href="calendar.html">Calendar</a>
     <a href="index.html">Log Out</a>
   </div>
   <header>
-    <p></p>
-    <h1 style="PADDING-LEFT:50px"><center>Welcome back, VeggieGrill!</center></h1>
+    <p></p><p>
+    <h1 style="PADDING-LEFT:50px"><center>Hello, Food4Kids!</center></h1>
 
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="assets/button_toggle.css">
+    <br>
+     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+     <link rel="stylesheet" type="text/css" href="assets/button_toggle.css">
 
       <h3 style="PADDING-LEFT:50px"> History </h3>
+      <a href="main.html"><button class="button buttonservice" style="margin-left:600px"> Find food near me! </button></a>
     </header>
 
     <p style="PADDING-LEFT:50px">
-      Number of donations received: 4 <br>
-      Number of people helped: 2
+      Number of donations received: 15 </br>
+      Number of people helped: 102
     </p>
 
     <a href="#" style="PADDING-LEFT:50px">View Detailed History</a>
-    <a href="provider_donate.html" style="PADDING-LEFT:30px">Schedule a Donation!</a>
-
+    <a href="main.html" style="PADDING-LEFT:30px">Find Food Near Me!</a>
     <br>
     <br>
-    <h3 style="PADDING-LEFT:50px; text-align:left; float:left">Donation Status</h3>
+    <h3 style="PADDING-LEFT:50px; text-align:left; float:left">Serving Status</h3>
     <table>
       <td>
         <div class="wrapper" style="PADDING-LEFT:20px">
@@ -73,5 +125,8 @@
     </table>
     <h4 style="PADDING-LEFT:50px; text-align:left; float:left">Turn slider on/off to change visibility.</h4>
 
-</body>
+
+  </body>
+
 </html>
+
