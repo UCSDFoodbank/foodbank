@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="assets/styles.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+<title> FoodBank Main</title>
+
+<style>
+    body {
+      margin:0;
+    }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      display: block;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 12px 14px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+        background-color: #1BCC6C;
+        color: white;
+    }
+    input[type=text] {
+    width: 400px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    background-color: white;
+    background-image: url('searchicon.png');
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 12px 40px 12px 40px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+}
+input[type=text]:focus {
+    width: 50%;
+}
+</style>
+<!-- google maps -->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+function initialize() {
+  var Y_point			= 32.881160;
+  var X_point			= -117.237887;
+
+  var zoomLevel		= 16;
+
+  var markerTitle		= "Foodbank";
+  var markerMaxWidth	= 300;
+
+  var contentString	= '<div>' +
+  '<h2>Foodbank</h2>'+
+  '<p>description</p>' +
+  '</div>';
+
+  var myLatlng = new google.maps.LatLng(Y_point, X_point);
+  var mapOptions = {
+            zoom: zoomLevel,
+            center: myLatlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+  }
+  var map = new google.maps.Map(document.getElementById('map_view'), mapOptions);
+
+  var marker = new google.maps.Marker({
+                      position: myLatlng,
+                      map: map,
+                      title: markerTitle
+  });
+
+    var infowindow = new google.maps.InfoWindow(
+                          {
+                            content: contentString,
+                            maxWidth: markerMaxWidth
+                          }
+    );
+
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map, marker);
+    });
+  }
+</script>
+
+</head>
+
+<body onload = "initialize()">
+  <div class="topnav">
+    <a class="active" href="index.html"><img src="assets/logo.png" style="width:100;height:25px;"></a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+  </div>
+
+
+<!-- page content -->
+<div style = "margin-left: 15%", "margin-right: 45%">
+<!-- Search box -->
+<form>
+  <br>
+  <input type="text" name="search" placeholder="Search..">
+</form>
+
+<br>
+
+<!-- provider cards -->
+<div class="w3-row-padding ">
+<div class="w3-twothird">
+  <div class="w3-container">
+    <!-- retaurant information-->
+    <div class="w3-panel w3-card-4" style="width:80%">
+      <header class="w3-container w3-light-grey">
+        <h4>Foodbank</h4>
+      </header>
+      <div class="w3-container">
+        <p>Provider description</p>
+        <hr>
+        <p>Available food</p>
+        <p>Address</p><br>
+        <p>Pick up hours</p>
+        <!--pictures -->
+        <img src="assets/sampleA.jpg" class="w3-right w3-margin-left w3-margin-bottom" style="width:100px; height:100px">
+        <img src="assets/sampleB.jpg" class="w3-right w3-margin-left w3-margin-bottom" style="width:100px; height:100px">
+        <img src="assets/sampleC.jpg" class="w3-right w3-margin-left w3-margin-bottom" style="width:100px; height:100px">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container">
+    <!-- retaurant information-->
+    <div class="w3-panel w3-card-4" style="width:80%">
+      <header class="w3-container w3-light-grey">
+        <h4>Foodbank</h4>
+      </header>
+      <div class="w3-container">
+        <p>Provider description</p>
+        <hr>
+        <p>Available food</p>
+        <p>Address</p><br>
+        <p>Pick up hours</p>
+        <!--pictures -->
+        <img src="assets/sampleA.jpg" class="w3-right w3-margin-left w3-margin-bottom" style="width:100px; height:100px">
+        <img src="assets/sampleB.jpg" class="w3-right w3-margin-left w3-margin-bottom" style="width:100px; height:100px">
+        <img src="assets/sampleC.jpg" class="w3-right w3-margin-left w3-margin-bottom" style="width:100px; height:100px">
+      </div>
+    </div>
+  </div>
+
+  <div class="w3-container">
+    <!-- retaurant information-->
+    <div class="w3-panel w3-card-4" style="width:80%">
+      <header class="w3-container w3-light-grey">
+        <h4>Foodbank</h4>
+      </header>
+      <div class="w3-container">
+        <p>Provider description</p>
+        <hr>
+        <p>Available food</p>
+        <p>Address</p><br>
+        <p>Pick up hours</p>
+        <!--pictures -->
+        <img src="assets/sampleA.jpg" class="w3-right w3-margin-left w3-margin-bottom" style="width:100px; height:100px">
+        <img src="assets/sampleB.jpg" class="w3-right w3-margin-left w3-margin-bottom" style="width:100px; height:100px">
+        <img src="assets/sampleC.jpg" class="w3-right w3-margin-left w3-margin-bottom" style="width:100px; height:100px">
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<!--sidebar-->
+<div style = "margin-left: 55%">
+
+  <!--sidebar content-->
+  <div class="w3-sidebar w3-white w3-bar-block" style="width:22%">
+  <!-- google map insertion -->
+  <div id="map_view" style ="width 25px; height: 400px;"> </div><br>
+  <div class = "w3-container">
+    <div class="w3-card-4">
+    <header class = "w3-container w3-white">
+      <h3>Foodbank</h3>
+      <hr>
+      <p>information.</p><br>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
