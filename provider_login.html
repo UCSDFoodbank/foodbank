@@ -74,6 +74,25 @@
     cursor: pointer;
   }
 
+  .buttonfindfood {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:850px;
+
+    display: inline-block;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 50%;
+    border: none !important;
+    font-size:0;
+  }
+
+  .buttonfindfood:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
+
   .buttonservice {
     background-color: white;
     color: black;
@@ -98,26 +117,26 @@
   </div>
   <header>
     <p></p><p>
-    <h1 style="PADDING-LEFT:50px"><center>Hello, VeggieGrill!</center></h1>
+    <h1 style="PADDING-LEFT:50px; PADDING-TOP:20px; color:white"><center>Hello, VeggieGrill!</center></h1>
 
     <br>
      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
      <link rel="stylesheet" type="text/css" href="assets/button_toggle.css">
 
-      <h3 style="PADDING-LEFT:50px"> History </h3>
-      <a href="main.html"><button class="button buttonservice" style="margin-left:600px"> Find food near me! </button></a>
+      <h3 style="PADDING-LEFT:100px; color:white"> History </h3>
+      
+      <a href="main.html"> <img src="assets/findfoodnearme.png" class="buttonfindfood"></a>
+
     </header>
 
-    <p style="PADDING-LEFT:50px">
+    <p style="PADDING-LEFT:100px; color:white">
       Number of donations scheduled: 5 </br>
       Number of charities helped: 2
     </p>
 
-    <a href="#" style="PADDING-LEFT:50px">View Detailed History</a>
-    <a href="main.html" style="PADDING-LEFT:30px">Find Food Near Me!</a>
     <br>
     <br>
-    <h3 style="PADDING-LEFT:50px; text-align:left; float:left">Serving Status</h3>
+    <h3 style="PADDING-LEFT:100px; text-align:left; float:left; color:white">Serving Status</h3>
     <table>
       <td>
         <div class="wrapper" style="PADDING-LEFT:20px">
@@ -126,7 +145,7 @@
         </div>
       </td>
     </table>
-    <h4 style="PADDING-LEFT:50px; text-align:left; float:left">Turn slider on/off to change visibility.</h4>
+    <h4 style="PADDING-LEFT:100px; text-align:left; float:left; color:white">Turn slider on/off to change visibility.</h4>
 
 
   </body>
