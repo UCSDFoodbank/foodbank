@@ -24,56 +24,22 @@ body {
   margin: 94px auto 0 auto;
 }
 
-.button {
-    background-color: #1BCC6C;
-    width: 300px;
-    height: 300px;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    padding: 32px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 32px;
-    margin: 10px 4px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
+.plate {
+  display: inline-block;
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+  background: transparent;
+  border-radius: 50%;
+  border: none !important;
+  font-size:0;
 }
 
-.buttoncharity {
-    background-color: white;
-    color: black;
-    border: 2px solid #1BCC6C;
-    background-image: url("assets/charity.png");
+.plate:hover {
 }
 
-.buttoncharity:hover {
-    background-color: #1BCC6C;
-    color: white;
-}
-
-.buttonservice {
-    background-color: white;
-    color: black;
-    border: 2px solid #48FFCF;
-}
-
-.buttonservice:hover {
-    background-color: #48FFCF;
-    color: white;
-}
-
-.buttonhungry {
-    background-color: white;
-    color: black;
-    border: 2px solid #CC8D1B;
-}
-
-.buttonhungry:hover {
-    background-color: #CC8D1B;
-    color: white;
+.plate:active {
+  transform: translateY(4px);
 }
 
 .topnav {
@@ -102,7 +68,7 @@ body {
 }
 
 .graytext {
-  color: #333;
+  color: black;
 }
 </style>
 </head>
@@ -119,16 +85,16 @@ body {
     <h2 class="graytext"><center>Are you...</center><h2>
     <table align="center">
       <td>
-        <a href="charity.html"><img src="assets/charity.png" style="width:300px;height:300px;">
+        <a href="charity.html"><img src="assets/charity.png" class="plate"></a>
       </td>
 
       <td>
-        <a href="provider.html"><img src="assets/foodservice.png" style="width:300px;height:300px;">
+        <a href="provider.html"><img src="assets/foodservice.png" class="plate"></a>
       </td>
 
       <td>
-        <a href="main.html"><img src="assets/hungry.png" style="width:300px;height:300px;">
-      </tr>
+        <a href="main.html"><img src="assets/hungry.png" class="plate"></a>
+      </td>
     </table>
   </div>
 </div>
