@@ -16,6 +16,11 @@ a:hover {
 
 body {
   margin:0;
+  background-image: url("assets/block.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
 .wrapper {
@@ -23,55 +28,23 @@ body {
   margin: 94px auto 0 auto;
 }
 
-.button {
-    background-color: #1BCC6C;
-    width: 300px;
-    height: 300px;
-    border: none;
-    border-radius: 4px;
-    color: white;
-    padding: 32px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 32px;
-    margin: 10px 4px;
-    -webkit-transition-duration: 0.4s; /* Safari */
-    transition-duration: 0.4s;
-    cursor: pointer;
+.plate {
+  display: inline-block;
+  cursor: pointer;
+  width: 300px;
+  height: 300px;
+  background: transparent;
+  border-radius: 50%;
+  border: none !important;
+  font-size:0;
 }
 
-.buttoncharity {
-    background-color: white;
-    color: black;
-    border: 2px solid #1BCC6C;
+.plate:hover {
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
 }
 
-.buttoncharity:hover {
-    background-color: #1BCC6C;
-    color: white;
-}
-
-.buttonservice {
-    background-color: white;
-    color: black;
-    border: 2px solid #48FFCF;
-}
-
-.buttonservice:hover {
-    background-color: #48FFCF;
-    color: white;
-}
-
-.buttonhungry {
-    background-color: white;
-    color: black;
-    border: 2px solid #CC8D1B;
-}
-
-.buttonhungry:hover {
-    background-color: #CC8D1B;
-    color: white;
+.plate:active {
+  transform: translateY(5px);
 }
 
 .topnav {
@@ -81,7 +54,6 @@ body {
 
 .topnav a {
   float: left;
-  display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -95,8 +67,13 @@ body {
 }
 
 .topnav a.active {
-    background-color: #1BCC6C;
+    background-color: #555;
+    padding: 6.5px;
     color: white;
+}
+
+.topnav a.active:hover {
+    background-color: #ddd;
 }
 
 .graytext {
@@ -107,26 +84,27 @@ body {
 <body>
 
 <div class="topnav">
-  <a class="active" href="index.html"><img src="assets/logo.png" style="width:100;height:20px;"></a>
+  <a class="active" href="index.html"><img src="assets/logo.png" style="width:100;height:40px;"></a>
+  <a href="index.html">About Us</a>
 </div>
 
 <div class="row justify-content-center">
   <divclass="col-10">
     <center><img src="assets/logo.png" style="width:600px;height:200px;pointer-events:none"></center>
-    <h1 class="graytext"><center>Welcome!</center><h1>
-    <h2 class="graytext"><center>Are you...</center><h2>
-    <table align="center">
+    <h1 class="graytext"><center>Welcome!</center></h1>
+    <h2 class="graytext"><center>Are you...</center></h2>
+    <table align="center" style="border-collapse: separate;border-spacing: 20px 20px;">
       <td>
-        <a href="charity.html"><button class="button buttoncharity">a charity?</button></a>
+        <a href="charity.html"><img src="assets/charity.png" class="plate"></a>
       </td>
 
       <td>
-        <a href="provider.html"><button class="button buttonservice">a food service?</button></a>
+        <a href="provider.html"><img src="assets/foodservice.png" class="plate"></a>
       </td>
 
       <td>
-        <a href="main.html"><button class="button buttonhungry">hungry?</button></a>
-      </tr>
+        <a href="main.html"><img src="assets/hungry.png" class="plate"></a>
+      </td>
     </table>
   </div>
 </div>
