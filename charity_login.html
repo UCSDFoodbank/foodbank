@@ -81,6 +81,24 @@
     cursor: pointer;
   }
 
+   .buttonfindfood {
+    width:200px;
+    height:200px;
+    position:absolute;
+    left:850px;
+
+    display: inline-block;
+    cursor: pointer;
+    background: transparent;
+    border-radius: 50%;
+    border: none !important;
+    font-size:0;
+  }
+
+  .buttonfindfood:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+
   .buttonservice {
     background-color: white;
     color: black;
@@ -109,7 +127,7 @@
      <link rel="stylesheet" type="text/css" href="assets/button_toggle.css">
 
       <h3 style="PADDING-LEFT:50px"> History </h3>
-      <a href="main.html"><button class="button buttonservice" style="margin-left:600px"> Find food near me! </button></a>
+      <a href="main.html"> <img src="assets/findfoodnearme.png" class="buttonfindfood"></a>
     </header>
 
     <p style="PADDING-LEFT:50px">
@@ -118,7 +136,7 @@
     </p>
 
     <a href="#" style="PADDING-LEFT:50px">View Detailed History</a>
-    <a href="main.html" style="PADDING-LEFT:30px">Find Food Near Me!</a>
+    
     <br>
     <br>
     <h3 style="PADDING-LEFT:50px; text-align:left; float:left">Serving Status</h3>
