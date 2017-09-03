@@ -20,6 +20,7 @@
       background-size: cover;
     }
 
+
     .topnav {
       overflow: hidden;
       background-color: #333;
@@ -40,9 +41,13 @@
     }
 
     .topnav a.active {
-        background-color: #1BCC6C;
-        padding: 6.5px;
+        background-color: #555;
+        padding: 6px;
         color: white;
+    }
+
+    .topnav a.active:hover {
+        background-color: #ddd;
     }
 
     input[type=text] {
@@ -119,9 +124,9 @@ function initialize() {
 </div>
 <div style = "margin-left: 15%", "margin-right: 45%">
 <!-- Search box -->
-<form>
+<form style="PADDING-LEFT:30px">
   <br>
-  <input type="text" name="search" placeholder="Search..">
+  <input type="text" name="search" placeholder="Search...">
 </form>
 
 <br>
@@ -131,7 +136,7 @@ function initialize() {
 <div class="w3-twothird">
   <div class="w3-container">
     <!-- retaurant information-->
-    <div class="w3-panel w3-card-4" style="width:80%">
+    <div class="w3-panel w3-card-4" style="width:80%;background-color:white">
       <header class="w3-container w3-light-grey">
         <h4>Foodbank</h4>
       </header>
@@ -151,7 +156,7 @@ function initialize() {
 
   <div class="w3-container">
     <!-- retaurant information-->
-    <div class="w3-panel w3-card-4" style="width:80%">
+    <div class="w3-panel w3-card-4" style="width:80%;background-color:white">
       <header class="w3-container w3-light-grey">
         <h4>Foodbank</h4>
       </header>
@@ -171,7 +176,7 @@ function initialize() {
 
   <div class="w3-container">
     <!-- retaurant information-->
-    <div class="w3-panel w3-card-4" style="width:80%">
+    <div class="w3-panel w3-card-4" style="width:80%;background-color:white">
       <header class="w3-container w3-light-grey">
         <h4>Foodbank</h4>
       </header>
@@ -195,7 +200,7 @@ function initialize() {
 <div style = "margin-left: 55%">
 
   <!--sidebar content-->
-  <div class="w3-sidebar w3-white w3-bar-block" style="width:22%">
+  <div class="w3-sidebar w3-bar-block" style="width:22%;background-color:rgba(0, 0, 0, 0);">
   <!-- google map insertion -->
   <div id="map_view" style ="width 25px; height: 400px;"> </div><br>
   <div class = "w3-container">
