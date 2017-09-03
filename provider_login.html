@@ -3,6 +3,14 @@
 <head>
    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+   <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+   <link rel="stylesheet" type="text/css" href="assets/styles.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+   
    <title>Profile</title>
    <style>
    body {
@@ -80,11 +88,13 @@
     cursor: pointer;
   }
 
-  .buttonfindfood {
+  .buttondonate {
     width:200px;
     height:200px;
-    position:absolute;
-    left:850px;
+    position:relative;
+    float:right;
+    left:-170px;
+    top:25px;
 
     display: inline-block;
     cursor: pointer;
@@ -94,7 +104,7 @@
     font-size:0;
   }
 
-  .buttonfindfood:hover {
+  .buttondonate:hover {
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
 
@@ -116,44 +126,96 @@
 </head>
 <body>
   <div class="topnav">
-    <a class="active" href="index.html"><img src="assets/logo.png" style="width:100;height:40px;"></a>
+    <a class="active" href="index.html"><img src="assets/logo.png" style="width:100;height:40px;floag:right"></a>
     <a href="provider_login.html">Profile</a>
     <a href="provider_donate.html">Donate</a>
     <a href="index.html">Log Out</a>
   </div>
   <header>
     <p></p><p>
-    <h1 style="PADDING-LEFT:50px; PADDING-TOP:20px; color:white"><center>Hello, VeggieGrill!</center></h1>
+    <h1 style="color:white"><center>Hello, VeggieGrill!</center></h1>
 
     <br>
      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
      <link rel="stylesheet" type="text/css" href="assets/button_toggle.css">
 
-      <h3 style="PADDING-LEFT:100px; color:white"> History </h3>
 
-      <a href="main.html"> <img src="assets/findfoodnearme.png" class="buttonfindfood"></a>
 
-    </header>
 
-    <p style="PADDING-LEFT:100px; color:white">
-      Number of donations scheduled: 2 </br>
-      Number of charities helped: 5
-    </p>
+   </header>
 
-    <img src="assets/history.png" style="PADDING-LEFT:100px; width:500px; height:200px">
+    <div class="ui-grid-a">
 
-    <br>
-    <br>
-    <h3 style="PADDING-LEFT:100px; text-align:left; float:left; color:white">Serving Status</h3>
-    <table>
-      <td>
-        <div class="wrapper" style="PADDING-LEFT:20px">
-          <input type="checkbox" name="toggle" id="toggle">
-          <label for="toggle"></label>
+      <!-- left column -->
+      <div class="ui-block-a">
+
+        <h3 style="PADDING-LEFT:100px; color:white"> History </h3>
+        
+        <p style="PADDING-LEFT:100px; color:white">
+          Number of donations scheduled: 2 </br>
+          Number of charities helped: 5
+        </p>
+
+        <img src="assets/history.png" style="PADDING-LEFT:100px; width:500px; height:200px">
+
+        <!-- panel -->
+        <div class="w3-container" style="PADDING-LEFT:100px">
+          <!-- retaurant information-->
+          <div class="w3-panel w3-card-4" style="background-color:white">
+            <header class="w3-container w3-light-grey">
+              <h4>Your information</h4>
+            </header>
+            <div class="w3-container">
+              
+              <p>Restaurant name: Veggie Grill</p>
+              <p>Address: 1234 Dank Memes St. San Diego, CA 56789</p>
+              <p>Type of food: Vegetarian</p>
+              <p>Pick up hours: 10:00PM - 11:00PM</p>
+            </div>
+          </div>
         </div>
-      </td>
-    </table>
-    <h4 style="PADDING-LEFT:100px; text-align:left; float:left; color:white">Turn slider on/off to change visibility.</h4>
+        
+
+      </div>
+
+      <!-- right column-->
+      <div class="ui-block-b">
+
+        <a href="main.html"> <img src="assets/donate.png" class="buttondonate"></a>
+
+        <!-- serving button and text -->
+        <div style="float:left; PADDING-LEFT:50px; PADDING-TOP:50px">
+          
+          <table>      
+            <!-- serving status and toggle button -->
+            <tr>
+              <h3 style="float:left; color:white">Serving Status</h3>
+              
+              <table>
+                <td>
+                  <div class="wrapper" style="PADDING-LEFT:20px">
+                    <input type="checkbox" name="toggle" id="toggle">
+                    <label for="toggle"></label>
+                  </div>
+                </td>
+              </table>
+            
+            </tr>
+            
+            <!-- slider text -->
+            <tr>
+              <h4 style=" text-align:left; color:white">Turn slider on/off to change visibility.</h4>
+            </tr>
+          </table>
+          
+        </div>
+
+      </div>
+
+
+
+    </div>
+
 
 
   </body>
