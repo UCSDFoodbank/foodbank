@@ -10,7 +10,8 @@
     <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-     
+    <link rel="stylesheet" type="text/css" href="assets/button_toggle.css">
+
     <title>Profile</title>
 
     <style>
@@ -30,29 +31,44 @@
         background-color: #333;
       }
 
-      .topnav a {
-        float: left;
-        color: #f2f2f2;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 17px;
-      }
 
-      .topnav a:hover {
-        background-color: #ddd;
-        color: black;
-      }
+       .topnav {
+         overflow: hidden;
+         background-color: #333;
+       }
 
-      .topnav a.active {
-          background-color: #555;
-          padding: 6.5px;
-          color: white;
-      }
+       .topnav a {
+         float: left;
+         color: #f2f2f2;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         font-size: 17px;
+       }
 
-      .topnav a.active:hover {
-          background-color: #ddd;
-      }
+       .topnav a:hover {
+         background-color: #ddd;
+         color: black;
+       }
+
+       .topnav a.active {
+           padding: 7.5px;
+           color: white;
+       }
+
+       .topnav a.active:hover {
+           background-color: #ddd;
+       }
+
+       .topnav a.set {
+           background-color: #555;
+           color: white;
+       }
+
+       .topnav a.set:hover {
+           background-color: #ddd;
+           color: black;
+       }
 
       H3 {display: inline;}
 
@@ -95,9 +111,6 @@
         width:200px;
         height:200px;
         position:relative;
-        float:right;
-        left:-170px;
-        top:25px;
 
         display: inline-block;
         cursor: pointer;
@@ -112,26 +125,26 @@
       }
     </style>
   </head>
-  
 
-  
+
+
   <body>
-    
+
     <!-- navigation bar -->
     <div class="topnav">
         <a class="active" href="index.html"><img src="assets/logo.png" style="width:100;height:40px;"></a>
-        <a href="provider_login.html">Profile</a>
-        <a href="provider_donate.html">Donate</a>
+        <a class="set" href="provider_login.html">Profile</a>
+        <a href="provider_donate.html">Donate Now</a>
         <a href="index.html">Log Out</a>
     </div>
 
     <!-- "Hello" text -->
-    <header>
-      <br>
-      <h1 style="color:white"><center>Hello, VeggieGrill!</center></h1>
-      <br>
-      <link rel="stylesheet" type="text/css" href="assets/button_toggle.css">
+    <br>
+    <center>
+    <header style="background-color:#eee; width: 35%">
+      <h1 style="color:black"><center>Welcome back, VeggieGrill!</center></h1>
     </header>
+    </center
 
     <!-- grid -->
     <div class="ui-grid-a">
@@ -139,82 +152,84 @@
       <!-- left column -->
       <div class="ui-block-a">
 
-        <!-- history text -->
-        <h3 style="PADDING-LEFT:100px; color:white"> History </h3>
-        
-        <p style="PADDING-LEFT:100px; color:white">
-          Number of donations scheduled: 2 </br>
-          Number of charities helped: 5
-        </p>
-
-        <!-- history image -->
-        <img src="assets/provider_history.png" style="PADDING-LEFT:100px; width:500px; height:200px">
-        <a href="#"><p style="PADDING-LEFT: 385px; color:white; display:inline"> Show all history </p></a>
-
-
-        <!-- information panel -->
         <div class="w3-container" style="PADDING-LEFT:100px">
           <!-- retaurant information-->
           <div class="w3-panel w3-card-4" style="background-color:white">
-            
+
             <header class="w3-container w3-light-grey">
-              <h4>Your information</h4>
+              <h4>Your Information</h4>
             </header>
 
             <div class="w3-container">
-              <p>Restaurant name: Veggie Grill</p>
-              <p>Address: 1234 Dank Memes St. San Diego, CA 56789</p>
+              <!-- serving button and text -->
+              <div style="PADDING-TOP:5px;">
+
+                <label for="toggle">
+                   <b>You are currently visible to charities. Turn slider off to stop donating.</b>
+                </label>
+                <input type="checkbox" name="toggle" id="toggle">
+                <label for="toggle"></label>
+              </div>
+              <p>Restaurant name: VeggieGrill</p>
+              <p>Address: 1234 E St. San Diego, CA 92122</p>
               <p>Type of food: Vegetarian</p>
-              <p>Pick up hours: 10:00PM - 11:00PM</p>
+              <p>Pick up hours: 06:00PM - 11:00PM</p>
             </div>
+
 
           </div>
         </div>
 
-      </div> 
+      </div>
       <!-- closing left column -->
 
 
       <!-- right column-->
       <div class="ui-block-b">
+        <!-- information panel -->
 
-        <!-- donate button -->
-        <a href="provider_donate.html"> <img src="assets/donate.png" class="buttondonate"></a>
+        <!-- history text -->
+        <div class="w3-container" style="PADDING-LEFT:30px;width:90%">
+          <!-- retaurant information-->
+          <div class="w3-panel w3-card-4" style="background-color:white">
 
-        <!-- serving button and text -->
-        <div style="float:left; PADDING-LEFT:50px; PADDING-TOP:50px">
-          
-          <table>      
+            <header class="w3-container w3-light-grey">
+              <h4>Your Recent Donations</h4>
+            </header>
 
-            <!-- serving status and toggle button -->
-            <tr>
-              <h3 style="float:left; color:white">Serving Status</h3>
-              <table>
-                <td>
-                  <div class="wrapper" style="PADDING-LEFT:20px">
-                    <input type="checkbox" name="toggle" id="toggle">
-                    <label for="toggle"></label>
-                  </div>
-                </td>
-              </table>
-            </tr>
-            
-            <!-- slider text -->
-            <tr>
-              <h4 style=" text-align:left; color:white">Turn slider on/off to change visibility.</h4>
-            </tr>
 
-          </table>
-          
+            <div class="w3-container">
+                              <br>
+                <!-- history image -->
+                <center><img src="assets/provider_history.png" style="width:400px; height:200px"></center>
+
+                <br>
+            </div>
+          </div>
         </div>
-        <!-- closing serving button and text -->
 
-      </div> 
+      </div>
       <!-- closing right column -->
 
-    </div> 
+    </div>
     <!-- closing grid-->
 
-  </body>
+    <!-- donate button -->
+    <center>  <a href="provider_donate.html"> <img src="assets/donate.png" class="buttondonate"></a></center>
 
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script>
+      $('#toggle').click(function() {
+        if ($(this).is(':checked')) {
+          $(this).siblings('label').html('<b>You are currently invisible to charities. Turn slider on to start donating.</b>');
+        } else {
+          $(this).siblings('label').html('<b>You are currently visible to charities. Turn slider off to stop donating.</b>');
+        }
+      });
+    </script>
+
+</body>
 </html>

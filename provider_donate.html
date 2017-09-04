@@ -3,7 +3,6 @@
   <head>
     <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/styles.css">
-    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="assets/button_toggle.css">
 
     <title>Donation Complete</title>
@@ -18,34 +17,43 @@
     }
 
 
-    .topnav {
-      overflow: hidden;
-      background-color: #333;
-    }
+     .topnav {
+       overflow: hidden;
+       background-color: #333;
+     }
 
-    .topnav a {
-      float: left;
-      color: #f2f2f2;
-      text-align: center;
-      padding: 14px 16px;
-      text-decoration: none;
-      font-size: 17px;
-    }
+     .topnav a {
+       float: left;
+       color: #f2f2f2;
+       text-align: center;
+       padding: 14px 16px;
+       text-decoration: none;
+       font-size: 17px;
+     }
 
-    .topnav a:hover {
-      background-color: #ddd;
-      color: black;
-    }
+     .topnav a:hover {
+       background-color: #ddd;
+       color: black;
+     }
 
-    .topnav a.active {
-        background-color: #555;
-        padding: 6.5px;
-        color: white;
-    }
+     .topnav a.active {
+         padding: 7.5px;
+         color: white;
+     }
 
-    .topnav a.active:hover {
-        background-color: #ddd;
-    }
+     .topnav a.active:hover {
+         background-color: #ddd;
+     }
+
+     .topnav a.set {
+         background-color: #555;
+         color: white;
+     }
+
+     .topnav a.set:hover {
+         background-color: #ddd;
+         color: black;
+     }
 
     p {
       color:white;
@@ -69,10 +77,10 @@
     <div class="topnav">
       <a class="active" href="index.html"><img src="assets/logo.png" style="width:100;height:40px;"></a>
       <a href="provider_login.html">Profile</a>
-      <a href="provider_donate.html">Donate</a>
+      <a class="set" href="provider_donate.html">Donate Now</a>
       <a href="index.html">Log Out</a>
     </div>
-    
+
     <header>
       <p></p>
       <h1 style="PADDING-LEFT:50px; color:white;"> What would you like to donate?</h1>
@@ -106,9 +114,9 @@
 
       <p>
         <label>4. Type of Food:</label>
-        <br> 
+        <br>
         <input type="radio" name="perish" value="perishable" /> Perishable
-        <br> 
+        <br>
         <input type="radio" name="nonperish" value="non-perishable" /> Non-Perishable/Canned goods
       </p>
 
@@ -121,15 +129,14 @@
         <label style="font-size:12px">Date </label>
         <input type="date" name="date" >
       </p>
-   	  
+
       <p>
         <label style="font-size:12px">Start</label>
         <input type="time" name="start_time">
         <label style="font-size:12px">End</label>
         <input type="time" name="end_time">
     	</p>
-            
-      <button type="button">Add Another Time</button>
+
 
       <p></p>
 
@@ -142,17 +149,17 @@
      	</p>
 
     </form>
-    
+
     <br>
-  	
+
     <p style="PADDING-LEFT:50px">
       <button type="button"><a href="provider_donation_confirm.html">Donate!</a></button>
   	</p>
-    
+
     <br>
     <br>
     <br>
-    
+
   </body>
 
 </html>

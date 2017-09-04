@@ -32,8 +32,8 @@ body {
 .plate {
   display: inline-block;
   cursor: pointer;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   background: transparent;
   border-radius: 50%;
   border: none !important;
@@ -42,10 +42,30 @@ body {
 
 .plate:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  content: "HELLO"
 }
 
 .plate:active {
   transform: translateY(5px);
+}
+
+.phrase {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(29, 106, 154, 0.72);
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+
+}
+.charity_phrase {
+
+}
+.charity_phrase {
+
 }
 
 .topnav {
