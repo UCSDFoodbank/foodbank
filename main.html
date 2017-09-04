@@ -11,7 +11,7 @@
 <title> FoodBank Main</title>
 
 <style>
-    
+
 
     body {
      margin:0;
@@ -72,50 +72,6 @@ input[type=text]:focus {
     width: 50%;
 }
 </style>
-<!-- google maps -->
-<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
-<script>
-function initialize() {
-  var Y_point			= 32.881160;
-  var X_point			= -117.237887;
-
-  var zoomLevel		= 16;
-
-  var markerTitle		= "Foodbank";
-  var markerMaxWidth	= 300;
-
-  var contentString	= '<div>' +
-  '<h2>Foodbank</h2>'+
-  '<p>description</p>' +
-  '</div>';
-
-  var myLatlng = new google.maps.LatLng(Y_point, X_point);
-  var mapOptions = {
-            zoom: zoomLevel,
-            center: myLatlng,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
-  }
-  var map = new google.maps.Map(document.getElementById('map_view'), mapOptions);
-
-  var marker = new google.maps.Marker({
-                      position: myLatlng,
-                      map: map,
-                      title: markerTitle
-  });
-
-    var infowindow = new google.maps.InfoWindow(
-                          {
-                            content: contentString,
-                            maxWidth: markerMaxWidth
-                          }
-    );
-
-    google.maps.event.addListener(marker, 'click', function() {
-      infowindow.open(map, marker);
-    });
-  }
-</script>
-
 </head>
 
 <body onload = "initialize()">
@@ -216,6 +172,51 @@ function initialize() {
     </div>
   </div>
 </div>
+
+
+<!-- google maps -->
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+<script>
+function initialize() {
+  var Y_point			= 32.881160;
+  var X_point			= -117.237887;
+
+  var zoomLevel		= 16;
+
+  var markerTitle		= "Foodbank";
+  var markerMaxWidth	= 300;
+
+  var contentString	= '<div>' +
+  '<h2>Foodbank</h2>'+
+  '<p>description</p>' +
+  '</div>';
+
+  var myLatlng = new google.maps.LatLng(Y_point, X_point);
+  var mapOptions = {
+            zoom: zoomLevel,
+            center: myLatlng,
+            mapTypeId: google.maps.MapTypeId.ROADMAP
+  }
+  var map = new google.maps.Map(document.getElementById('map_view'), mapOptions);
+
+  var marker = new google.maps.Marker({
+                      position: myLatlng,
+                      map: map,
+                      title: markerTitle
+  });
+
+    var infowindow = new google.maps.InfoWindow(
+                          {
+                            content: contentString,
+                            maxWidth: markerMaxWidth
+                          }
+    );
+
+    google.maps.event.addListener(marker, 'click', function() {
+      infowindow.open(map, marker);
+    });
+  }
+</script>
 
 </body>
 </html>
