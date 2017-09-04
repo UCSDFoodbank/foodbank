@@ -3,17 +3,23 @@
 <head>
    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
    <title>Profile</title>
    <style>
-   body {
+    body {
      margin:0;
-     background-image:url("assets/giver2.jpeg");
+     background-image:url("assets/giver3.jpeg");
+     background-repeat: no-repeat;
      -webkit-background-size: cover;
      -moz-background-size: cover;
      -o-background-size: cover;
      background-size: cover;
+     position: relative;
    }
-
 
    .topnav {
      overflow: hidden;
@@ -81,11 +87,14 @@
     cursor: pointer;
   }
 
-   .buttonfindfood {
+  .buttonfindfood {
     width:200px;
     height:200px;
-    position:absolute;
-    left:850px;
+    position:relative;
+    float:right;
+    left:-200px;
+    top:50px;
+    opacity:.90;
 
     display: inline-block;
     cursor: pointer;
@@ -99,15 +108,8 @@
     box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
   }
 
-  .buttonservice {
-    background-color: white;
-    color: black;
-    border: 2px solid #48FFCF;
-  }
-
-  .buttonservice:hover {
-    background-color: #48FFCF;
-    color: white;
+  .history {
+    opacity:0.90;
   }
    </style>
 </head>
@@ -126,29 +128,68 @@
      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
      <link rel="stylesheet" type="text/css" href="assets/button_toggle.css">
 
-      <h3 style="PADDING-LEFT:50px"> History </h3>
-      <a href="main.html"> <img src="assets/findfoodnearme.png" class="buttonfindfood"></a>
     </header>
 
-    <p style="PADDING-LEFT:50px">
-      Number of donations received: 15 </br>
-      Number of people helped: 102
-    </p>
+    <div class="ui-grid-a">
 
-    <a href="#" style="PADDING-LEFT:50px">View Detailed History</a>
 
-    <br>
-    <br>
-    <h3 style="PADDING-LEFT:50px; text-align:left; float:left">Serving Status</h3>
-    <table>
-      <td>
-        <div class="wrapper" style="PADDING-LEFT:20px">
-          <input type="checkbox" name="toggle" id="toggle">
-          <label for="toggle"></label>
+      <!-- LEFT COLUMN -->
+      <div class="ui-block-a">
+
+        <h3 style="PADDING-LEFT:100px;"> History </h3>
+        
+        <p style="PADDING-LEFT:100px; ">
+          Number of donations scheduled: 15 </br>
+          Number of charities helped: 102
+        </p>
+
+        <img src="assets/history.png" class="history" style="PADDING-LEFT:100px; width:500px; height:200px">
+        
+        
+        <a href="#"><p style="PADDING-LEFT: 385px; color:black;display:inline"> Show all history </p></a>
+      </div>
+
+
+      <!-- RIGTH COLUMN-->
+      <div class="ui-block-b">
+
+        <a href="main.html"> <img src="assets/findfoodnearme.png" class="buttonfindfood"></a>
+
+        <!-- serving button and text -->
+        <div style="float:left; PADDING-LEFT:50px; PADDING-TOP:50px">
+          
+          <br>
+          
+
+          <table>      
+            <!-- serving status and toggle button -->
+            <tr>
+              <h3 style="float:left">Serving Status</h3>
+              
+              <table>
+                <td>
+                  <div class="wrapper" style="PADDING-LEFT:20px">
+                    <input type="checkbox" name="toggle" id="toggle">
+                    <label for="toggle"></label>
+                  </div>
+                </td>
+              </table>
+            
+            </tr>
+            
+            <!-- slider text -->
+            <tr>
+              <h4 style=" text-align:left">Turn slider on/off to change visibility.</h4>
+            </tr>
+          </table>
+          
         </div>
-      </td>
-    </table>
-    <h4 style="PADDING-LEFT:50px; text-align:left; float:left">Turn slider on/off to change visibility.</h4>
+
+      </div>
+
+
+
+    </div>
 
 
   </body>
