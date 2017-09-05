@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <link rel="stylesheet" type="text/css" href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="assets/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/button_toggle.css">
+
+    <title>Profile</title>
+
+    <style>
+     body {
+      margin:0;
+       background-image:url("assets/food.jpeg");
+       background-repeat: no-repeat;
+       -webkit-background-size: cover;
+       -moz-background-size: cover;
+       -o-background-size: cover;
+       background-size: cover;
+       position: relative;
+     }
+
+      .topnav {
+        overflow: hidden;
+        background-color: #333;
+      }
+
+
+       .topnav {
+         overflow: hidden;
+         background-color: #333;
+       }
+
+       .topnav a {
+         float: left;
+         color: #f2f2f2;
+         text-align: center;
+         padding: 14px 16px;
+         text-decoration: none;
+         font-size: 17px;
+       }
+
+       .topnav a:hover {
+         background-color: #ddd;
+         color: black;
+       }
+
+       .topnav a.active {
+           padding: 7.5px;
+           color: white;
+       }
+
+       .topnav a.active:hover {
+           background-color: #ddd;
+       }
+
+       .topnav a.set {
+           background-color: #555;
+           color: white;
+       }
+
+       .topnav a.set:hover {
+           background-color: #ddd;
+           color: black;
+       }
+
+      H3 {display: inline;}
+
+      a {
+        color: inherit;
+      }
+
+      a:hover {
+        color: inherit;
+        text-decoration: inherit;
+      }
+
+      body {
+        margin:0;
+      }
+
+      .wrapper {
+        max-width: 300px;
+        margin: 94px auto 0 auto;
+      }
+
+      .button {
+        background-color: #1BCC6C;
+        width: 300px;
+        height: 30px;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        padding: 50px 2px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 26px;
+        -webkit-transition-duration: 0.4s; /* Safari */
+        transition-duration: 0.4s;
+        cursor: pointer;
+      }
+
+      .buttondonate {
+        width:200px;
+        height:200px;
+        position:relative;
+
+        display: inline-block;
+        cursor: pointer;
+        background: transparent;
+        border-radius: 50%;
+        border: none !important;
+        font-size:0;
+      }
+
+      .buttondonate:hover {
+        box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+      }
+    </style>
+  </head>
+
+
+
+  <body>
+
+    <!-- navigation bar -->
+    <div class="topnav">
+        <a class="active" href="index.html"><img src="assets/logo.png" style="width:100;height:40px;"></a>
+        <a class="set" href="provider_login.html">Profile</a>
+        <a href="provider_donate.html">Donate Now</a>
+        <a href="index.html">Log Out</a>
+    </div>
+
+    <!-- "Hello" text -->
+    <br>
+    <center>
+    <header style="background-color:#eee; width: 35%">
+      <h1 style="color:black"><center>VeggieGrill</center></h1>
+    </header>
+    </center
+
+    <!-- grid -->
+    <div class="ui-grid-a">
+
+      <!-- left column -->
+      <div class="ui-block-a">
+
+        <div class="w3-container" style="PADDING-LEFT:100px">
+          <!-- retaurant information-->
+          <div class="w3-panel w3-card-4" style="background-color:white">
+
+            <header class="w3-container w3-light-grey">
+              <h4>Restaurant Information</h4>
+            </header>
+
+            <div class="w3-container">
+              <!-- serving button and text -->
+              <div style="PADDING-TOP:5px;">
+
+                <label for="toggle">
+                   <b>Food availability. Turn slider off if you take the last food item.</b>
+                </label>
+                <input type="checkbox" name="toggle" id="toggle">
+                <label for="toggle"></label>
+              </div>
+              <p>Restaurant name: VeggieGrill</p>
+              <p>Address: 1234 E St. San Diego, CA 92122</p>
+              <p>Type of food: Vegetarian</p>
+              <p>Pick up hours: 06:00PM - 11:00PM</p>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+      <!-- closing left column -->
+
+
+      <!-- right column-->
+      <div class="ui-block-b">
+        <!-- information panel -->
+
+        <!-- history text -->
+        <div class="w3-container" style="PADDING-LEFT:30px;width:90%">
+          <!-- retaurant information-->
+          <div class="w3-panel w3-card-4" style="background-color:white">
+
+            <header class="w3-container w3-light-grey">
+              <h4>Available Food Item(s)</h4>
+            </header>
+
+
+            <div class="w3-container">
+                              <br>
+                <!-- history image -->
+                <center><img src="assets/foodlist.png" style="width:400px; height:200px"></center>
+
+                <br>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <!-- closing right column -->
+
+    </div>
+    <!-- closing grid-->
+
+    <!-- donate button -->
+    <center>  <a href="provider_donate.html"> <img src="assets/donate.png" class="buttondonate"></a></center>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+    <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+    <script>
+      $('#toggle').click(function() {
+        if ($(this).is(':checked')) {
+          $(this).siblings('label').html('<b>You are currently invisible to charities. Turn slider on to start donating.</b>');
+        } else {
+          $(this).siblings('label').html('<b>You are currently visible to charities. Turn slider off to stop donating.</b>');
+        }
+      });
+    </script>
+
+</body>
+</html>
