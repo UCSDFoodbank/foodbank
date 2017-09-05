@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="assets/styles.css">
+  <title>Pickup Food</title>
+  <style>
+   body {
+     margin:0;
+     background-image:url("assets/hands.png");
+     background-repeat: no-repeat;
+     -webkit-background-size: cover;
+     -moz-background-size: cover;
+     -o-background-size: cover;
+     background-size: cover;
+     position: relative;
+   }
+
+    .topnav {
+      overflow: hidden;
+      background-color: #333;
+    }
+
+    .topnav a {
+      float: left;
+      color: #f2f2f2;
+      text-align: center;
+      padding: 14px 16px;
+      text-decoration: none;
+      font-size: 17px;
+    }
+
+    .topnav a:hover {
+      background-color: #ddd;
+      color: black;
+    }
+
+    .topnav a.active {
+        padding: 6.5px;
+        color: white;
+    }
+
+    .topnav a.active:hover {
+        background-color: #ddd;
+    }
+
+    body {
+      margin:0;
+    }
+
+    .wrapper {
+      max-width: 300px;
+      margin: 94px auto 0 auto;
+    }
+
+    .topnav a.set {
+        background-color: #555;
+        color: white;
+    }
+
+    .topnav a.set:hover {
+        background-color: #ddd;
+        color: black;
+    }
+  </style>
+</head>
+<body>
+
+    <div class="topnav">
+      <a class="active" href="index.html"><img src="assets/logo.png" style="width:100;height:40px;"></a>
+      <a href="charity_login.html">Profile</a>
+      <a class="set" href="calendar.html">Need Food?</a>
+      <a href="index.html">Log Out</a>
+    </div>
+    <div class="row justify-content-center">
+      <divclass="col-10">
+      <h1 class="graytext"><center>Schedule a Donation</center><h1>
+      <h5 class="graytext"><center>Here you can find food to pick up throughout the week.<br>Just click on an available time and get ready to go!</center><h5>
+      <!--<h5 class="graytext"><center><a href="clock.html">Need food today?</a></center><h5>-->
+        <iframe src="https://calendar.google.com/calendar/embed?mode=WEEK&amp;height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=foodbank.cogs.187a%40gmail.com&amp;color=%2329527A&amp;ctz=America%2FLos_Angeles" style="border-width:0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+      </table>
+      </div>
+    </div>
+  </body>
+
+  <!-- JS -->
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+  <script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+</html>

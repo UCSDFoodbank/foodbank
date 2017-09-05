@@ -3,7 +3,7 @@
 <head>
 <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="assets/styles.css">
-<title>FoodBank</title>
+<title>About Us</title>
 <style>
 a {
   color: inherit;
@@ -17,11 +17,7 @@ a:hover {
 body {
   margin:0;
   background-image: url("assets/block.png");
-  position: relative;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  background-repeat: repeat-x;
 }
 
 .wrapper {
@@ -32,8 +28,8 @@ body {
 .plate {
   display: inline-block;
   cursor: pointer;
-  width: 250px;
-  height: 250px;
+  width: 300px;
+  height: 300px;
   background: transparent;
   border-radius: 50%;
   border: none !important;
@@ -42,30 +38,10 @@ body {
 
 .plate:hover {
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-  content: "HELLO"
 }
 
 .plate:active {
   transform: translateY(5px);
-}
-
-.phrase {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background: rgba(29, 106, 154, 0.72);
-  color: #fff;
-  visibility: hidden;
-  opacity: 0;
-
-}
-.charity_phrase {
-
-}
-.charity_phrase {
-
 }
 
 .topnav {
@@ -75,6 +51,7 @@ body {
 
 .topnav a {
   float: left;
+  background-color: #555;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
@@ -88,9 +65,9 @@ body {
 }
 
 .topnav a.active {
-    background-color: #555;
-    padding: 6.5px;
-    color: white;
+  background-color: #333;
+  padding: 6.5px;
+  color: white;
 }
 
 .topnav a.active:hover {
@@ -99,6 +76,13 @@ body {
 
 .graytext {
   color: #333;
+}
+
+.aboutus{
+  padding: 10px;
+  background-color:white;
+  padding-left:100px;
+  font-size: 25px;
 }
 </style>
 </head>
@@ -110,24 +94,25 @@ body {
 </div>
 
 <div class="row justify-content-center">
-  <divclass="col-10">
-    <center><img src="assets/logo.png" style="width:600px;height:200px;pointer-events:none"></center>
-    <h1 class="graytext"><center>Welcome!</center></h1>
-    <h2 class="graytext"><center>Are you...</center></h2>
-    <table align="center" style="border-collapse: separate;border-spacing: 20px 20px;">
-      <td>
-        <a href="charity.html"><img src="assets/charity.png" class="plate"></a>
-      </td>
+  <center><img src="assets/logo.png" style="width:600px;height:200px;pointer-events:none"></center>
+</div>
+<div class="aboutus">
+  <p><b>Foodbank. Connections through food.</b></p>
+  <p>Hi, we are Foodbank!<br>
+  Our mission is to help combat food waste and feed the hungry.<br>
+  We provide a comprehensive database for those looking for food, and for those who are giving out food.<br>
+  Charities, food services, and individuals in need of food are all encouraged to give us a try!<br>
+  Here at Foodbank, we believe in the power of food, and with the help of everyone,<br>
+  we can do something truly amazing. </p>
 
-      <td>
-        <a href="provider.html"><img src="assets/foodservice.png" class="plate"></a>
-      </td>
-
-      <td>
-        <a href="main.html"><img src="assets/hungry.png" class="plate"></a>
-      </td>
-    </table>
-  </div>
+  <p><b>Disclaimer:</b><br>
+  Foodbank is meant to connect charities with food services.<br>
+  If you are an individual who wants to give food, but you are not an organization, please<br>
+  call your local charity to donate food.</p>
+  Foodbank is not a food service and is not liable for any damages to the property or<br>
+  the health of those who participate in our company. Those who choose to take or give out food do so<br>
+  of their own volition. By participating in Foodbank, you acknowledge the possibility of third-party<br>
+  induced risks, and will not hold Foodbank or others liable for those risks.</p>
 </div>
 </body>
 
