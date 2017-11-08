@@ -200,36 +200,29 @@ input[type=text]:focus {
 
 
 <!-- google maps -->
-<script src="https://maps.googleapis.com/maps/api/js?sensor=true"></script>
+<script src="https://maps.googleapis.com/maps/api/js?sensor=false&language=en&key=APIAIzaSyAFLqKIdamECpjBYjEyixX9KnsSOeRU_uA"></script>
 <script>
 function initialize() {
-  var Y_point			= 32.869771;
-  var X_point			= -117.212563;
-  var zoomLevel		= 12;
-  var markerTitle		= "VeggieGrill";
-  var markerMaxWidth	= 300;
-  var contentString	= '<div>' +
-  '<h4>VeggieGrill</h4>'+
-  '</div>';
-  var myLatlng = new google.maps.LatLng(Y_point, X_point);
+  var myLatlng = new google.maps.LatLng(32.869771, -117.212563);
   var mapOptions = {
-            zoom: zoomLevel,
-            center: myLatlng,
-            mapTypeId: google.maps.MapTypeId.ROADMAP
+      zoom: 12,
+      center:myLatlng,
+      mapTypeld: google.maps.MapTypeld.ROADMAP
   }
-  var map = new google.maps.Map(document.getElementById('map_view'), mapOptions);
-  var marker = new google.maps.Marker({
-                      position: myLatlng,
-                      map: map,
-                      title: markerTitle
+  
+  var map = new google.maps.Map(document.getElementByld('map_canvas'), mapOptions);
+  var maker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
   });
-    var infowindow = new google.maps.InfoWindow(
-                          {
-                            content: contentString,
-                            maxWidth: markerMaxWidth
-                          }
-    );
-    google.maps.event.addListener(marker, 'click', function() {
+  var infowindow = new google.maps.InfoWindow(
+      {
+            content: "<h4>VeggieGrill</h4>"
+            maxWidth: 300
+      }
+  );
+    
+  google.maps.event.addListener(marker, 'click', function() {
       infowindow.open(map, marker);
     });
   }
